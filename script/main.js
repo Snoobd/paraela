@@ -71,13 +71,13 @@ document.getElementById('btn').addEventListener('click', () => {
     if(count_click <= 1) {
         setInterval(create_heart, 500)
         typewriterParagraph(paragraph)
-        setInterval(typewriterSpan, 60230)
+        setInterval(typewriterSpan, 60490)
         animatedPlay()
 
     } else {
         document.getElementById('btn').removeEventListener('click', () => {
             typewriterParagraph(paragraph)
-            setInterval(typewriterSpan, 60120)
+            setInterval(typewriterSpan, 60490)
         })
     }
 

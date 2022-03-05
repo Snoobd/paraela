@@ -6,8 +6,9 @@
 }
 
 body {
-    background-color: #ffe4ed;
+    background-color: #506ee5;
     font-family: 'Poppins';
+    color: #16083d
 }
 
 .hero main {
@@ -35,7 +36,7 @@ body {
 
 .apresentacao p.on {
     display: flex;
-    font-size: 1em;
+    font-size: 1.01em;
     text-align: center;
     margin-top: -15px;
     width: 500px;
@@ -55,7 +56,7 @@ body {
     width: 190px;
     height: 60px;
     background-color: transparent;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #1d0c20;
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 20px;
@@ -109,11 +110,11 @@ audio {
 }
 
 #play-pause {
-    background-color: #ffe4ed;
+    background-color: #506ee5;
 }
 
 #play-pause:hover {
-    background-color: #ffe4ed;
+    background-color: #506ee5;
 }
 
 a.btn {
@@ -121,21 +122,21 @@ a.btn {
     margin: none;
     outline: none;
     box-shadow: none;
-    background-color: #ffe4ed;
-    color: black;
+    background-color: #506ee5;
+    color: #506ee5;
     text-decoration: none;
 }
 
 a.btn:visited {
     text-decoration: none;
     color: black;
-    background-color: #ffe4ed;
+    background-color: #506ee5;
 
 }
 
 
 a.btn:hover {
-    background-color: #ffe4ed;
+    background-color: #506ee5;
     border-radius: none;
     margin: none;
     outline: none;
