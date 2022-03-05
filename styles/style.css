@@ -1,0 +1,218 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe4ed;
+    font-family: 'Poppins';
+}
+
+.hero main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.apresentacao h1 {
+    font-size: 2.5rem;
+}
+
+.apresentacao p.off,span.off {
+    display: none;
+}
+
+.apresentacao p.on {
+    display: flex;
+    font-size: 1em;
+    text-align: center;
+    margin-top: -15px;
+    width: 500px;
+    opacity: 1;
+    transition-delay: .7s;
+
+}
+
+.apresentacao span.on {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.apresentacao button#btn {
+    justify-self: center;
+    width: 190px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+    transition: .3s;
+    animation: shadow 1s infinite;
+}
+
+
+.apresentacao button#btn:hover {
+    opacity: .5;
+}
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+    font-size: 25px;
+}
+
+#player {
+    background-color: transparent;
+
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    width: 90%;
+    background-color: transparent;
+
+    max-width: 375px;
+    box-shadow: none;
+    margin: 0;
+}
+
+h4 {
+    color: #7159c1;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+audio {
+    width: 50%;
+    margin-top: 30px;
+}
+
+#play-pause {
+    background-color: #ffe4ed;
+}
+
+#play-pause:hover {
+    background-color: #ffe4ed;
+}
+
+a.btn {
+    border-radius: none;
+    margin: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #ffe4ed;
+    color: black;
+    text-decoration: none;
+}
+
+a.btn:visited {
+    text-decoration: none;
+    color: black;
+    background-color: #ffe4ed;
+
+}
+
+
+a.btn:hover {
+    background-color: #ffe4ed;
+    border-radius: none;
+    margin: none;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+
+span::after {
+    content: '|';
+    margin-left: 1px;
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+h1::after {
+    content: '|';
+    margin-left: 1px;
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+h1.off {
+    display: none;
+}
+
+h1.on {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.on {
+    display: flex;
+    animation: playPause 1s normal;
+}
+
+div.off {
+    transform: translateY(-30px);
+    display: none;
+}
+
+@keyframes playPause {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes shadow {
+    0%, 100% {
+        box-shadow: 1px 1px .5px black;
+    }
+    50% {
+        box-shadow: 1px 1px 5px black;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}

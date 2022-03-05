@@ -1,0 +1,26 @@
+@media (max-width: 992px) {
+    
+    .apresentacao h1{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .apresentacao p.on {
+        font-size: 0.9rem;
+        width: 390px;
+    }
+
+    .apresentacao .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apresentacao button {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
