@@ -36,7 +36,7 @@ body {
 
 .apresentacao p.on {
     display: flex;
-    font-size: 1.05em;
+    font-size: 1em;
     text-align: center;
     margin-top: -15px;
     width: 500px;
