@@ -18,7 +18,7 @@ export default {
 
     play() {
         this.isPlaying = true;
-        this.audio.play()
+        this.audio.play();
         this.playPause.innerText = 'pause'
     },
 

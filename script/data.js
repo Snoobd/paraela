@@ -1,7 +1,7 @@
 export default [
     {
-        title: 'I want to be with you',
-        artist: 'Mareux',
+        title: 'Sexy Nasty',
+        artist: 'Mac Miller',
         file: 'perfectgirl.mp3'
     }
 ]
