@@ -72,7 +72,7 @@ document.getElementById('btn').addEventListener('click', () => {
     if(count_click <= 1) {
         setInterval(create_heart, 600) 
         setTimeout(typewriterParagraph, 14100)
-        setTimeout(typewriterSpan, 1000)
+        setTimeout(typewriterSpan, 46000)
         animatedPlay()
 
     } else {
