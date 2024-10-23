@@ -22,7 +22,8 @@ function typewriter(element) {
     });
 }
 
-function typewriterParagraph(element) {
+function typewriterParagraph() {
+    let element = paragraph
     paragraph.classList.remove('off')
     paragraph.classList.add('on')
     const texto_array = element.innerHTML.split('')
@@ -69,15 +70,15 @@ function animatedPlay() {
 document.getElementById('btn').addEventListener('click', () => {
     count_click++
     if(count_click <= 1) {
-        setInterval(create_heart, 500)
-        typewriterParagraph(paragraph)
-        setInterval(typewriterSpan, 60490)
+        setInterval(create_heart, 600) 
+        setTimeout(typewriterParagraph, 14100)
+        setInterval(typewriterSpan, 40000)
         animatedPlay()
 
     } else {
         document.getElementById('btn').removeEventListener('click', () => {
-            typewriterParagraph(paragraph)
-            setInterval(typewriterSpan, 60490)
+            setTimeout(typewriterParagraph, 14100)
+            setInterval(typewriterSpan, 41000)
         })
     }
 

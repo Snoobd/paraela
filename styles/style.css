@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #cc23ff54;
+    background-color: #db67ff54;
     font-family: 'Poppins';
     color: #000000
 }
@@ -39,7 +39,7 @@ body {
     font-size: 1em;
     text-align: center;
     margin-top: -15px;
-    width: 500px;
+    width: 650px;
     opacity: 1;
     transition-delay: .7s;
 

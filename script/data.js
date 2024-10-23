@@ -1,7 +1,7 @@
 export default [
     {
-        title: 'Sexy Nasty',
-        artist: 'Mac Miller',
-        file: 'perfectgirl.mp3'
+        title: 'Nights Like This',
+        artist: 'The Kid Laroi',
+        file: 'nightslikethis.mp3'
     }
 ]
