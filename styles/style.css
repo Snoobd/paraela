@@ -161,6 +161,7 @@ h1.off {
 
 h1.on {
     display: flex;
+    text-align: center;
 }
 
 .row {
