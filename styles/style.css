@@ -3,6 +3,16 @@
 
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+video.off {
+    display: none;
+}
+
+video.on {
+    display: flex;
 }
 
 body {
@@ -11,9 +21,49 @@ body {
     color: #000000
 }
 
-.hero main {
-    width: 100vw;
-    height: 90vh;
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.video {    
+    width: 190px;
+    height: 400px;
+    margin: 10px;
+    padding: 0;
+    border: none;
+    flex-direction: column;
+}
+
+.aniversario {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px;
+}
+
+.aniversario:hover {
+    opacity: .5;
+    transition: 5ms;
+}
+
+.hero main {    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,12 +135,12 @@ body {
 }
 
 .card {
-    width: 90%;
     background-color: transparent;
 
-    max-width: 375px;
+    max-width: 200px;
     box-shadow: none;
     margin: 0;
+    padding: 0;
 }
 
 h4 {
@@ -158,6 +208,8 @@ h1::after {
 h1.off {
     display: none;
 }
+
+
 
 h1.on {
     display: flex;
